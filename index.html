@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="card">
+        <h2>Calculadora</h2>
+        <input id="n1" type="number" placeholder="Número 1" aria-label="Número 1">
+        <input id="n2" type="number" placeholder="Número 2" aria-label="Número 2">
+
+        <div class="controls">
+            <button onclick="ejecutar('add')">Sumar (+)</button>
+            <button onclick="ejecutar('sub')">Restar (-)</button>
+            <button onclick="ejecutar('mul')">Multiplicar (×)</button>
+            <button onclick="ejecutar('div')">Dividir (÷)</button>
+            <button onclick="ejecutar('pow')">Potencia (^)</button>
+            <button onclick="ejecutar('modulo')">Módulo (%)</button>
+        </div>
+
+        <div id="display" aria-live="polite">0</div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
